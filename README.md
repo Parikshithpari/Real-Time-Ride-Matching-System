@@ -54,12 +54,3 @@ src/ ├── main/ │   ├── java/ │   │   └── com.example.rid
   "dropLocation": "Electronic city"
 }
 
-## 📌 Future Enhancements
-
-### 🚗 Driver Intelligence & Optimization
-- Implement a smart driver-matching algorithm that ranks drivers based on real-time distance, availability, historical acceptance rate, and user ratings
-- Integrate Redis for ultra-fast caching of driver availability and location data to reduce DB load and accelerate response time
-
-### 📣 Communication & User Experience
-- Enable asynchronous Email and SMS notifications using Kafka consumers to notify users and drivers about booking updates, cancellations, and ride status changes
-- Introduce WebSocket-based real-time communication to push live ride updates (e.g., driver ETA, status transitions) directly to connected frontend clients for an Uber-like experience
