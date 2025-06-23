@@ -41,7 +41,19 @@ Publishes ride status events to the `ride-updates` topic for downstream listener
 Consumes messages from `ride-request`, fetches nearby drivers, updates availability, and produces a `driver-matching` event if successful.
 
 ## 🗃️ Folder Structure
-src/ ├── main/ │   ├── java/ │   │   └── com.example.ridebooking/ │   │       ├── producer/ │   │       ├── consumer/ │   │       ├── model/ │   │       ├── repository/ │   │       └── service/ │   └── resources/ │       └── application.properties
+src/
+├── main/
+│   ├── java/
+│   │   └── com.example.ridebooking/
+│   │       ├── controller/
+│   │       ├── model/
+│   │       ├── service/
+│   │       ├── config/
+│   │       └── kafka/
+│   └── resources/
+│       ├── application.properties
+│       └── static/
+
 
 
 ## 🧪 Sample Payloads
