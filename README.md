@@ -14,7 +14,7 @@ This project is a Spring Boot backend service designed to enable real-time ride 
 
 ## 🛠️ Tech Stack
 
-- **Java 17**
+- **Java 21**
 - **Spring Boot**
 - **Apache Kafka**
 - **Spring Data JPA**
@@ -52,15 +52,9 @@ src/ ├── main/ │   ├── java/ │   │   └── com.example.rid
   "userId": "U101",
   "pickupLocation": "Majestic",
   "dropLocation": "Electronic city"
-}```
+}
+```
 
-## 📌 Future Enhancements
 
-### 🚗 Driver Intelligence & Optimization
-- Implement a smart driver-matching algorithm that ranks drivers based on real-time distance, availability, historical acceptance rate, and user ratings
-- Integrate Redis for ultra-fast caching of driver availability and location data to reduce DB load and accelerate response time
 
-### 📣 Communication & User Experience
-- Enable asynchronous Email and SMS notifications using Kafka consumers to notify users and drivers about booking updates, cancellations, and ride status changes
-- Introduce WebSocket-based real-time communication to push live ride updates (e.g., driver ETA, status transitions) directly to connected frontend clients for an Uber-like experience
 
