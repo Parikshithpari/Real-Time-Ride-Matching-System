@@ -1,7 +1,6 @@
 # Real-Time-Ride-Matching-System
 A real-time ride-matching backend built with Spring Boot and Apache Kafka. Supports producer-consumer architecture for scalable, event-driven ride dispatching and status tracking.
 <br>
-# Real-Time Ride Matching System
 
 This project is a Spring Boot backend service designed to enable real-time ride dispatching and tracking using Apache Kafka. It simulates ride booking logic where riders generate requests, drivers are matched based on location, and updates are communicated asynchronously between services.
 
@@ -57,7 +56,10 @@ src/ ├── main/ │   ├── java/ │   │   └── com.example.rid
 
 ## 📌 Future Enhancements
 
-- Intelligent driver ranking based on distance and rating
-- Redis-based driver availability caching
-- Email/SMS notifications via Kafka consumers
-- WebSocket integration for live updates to frontend clients
+### 🚗 Driver Intelligence & Optimization
+- Implement a smart driver-matching algorithm that ranks drivers based on real-time distance, availability, historical acceptance rate, and user ratings
+- Integrate Redis for ultra-fast caching of driver availability and location data to reduce DB load and accelerate response time
+
+### 📣 Communication & User Experience
+- Enable asynchronous Email and SMS notifications using Kafka consumers to notify users and drivers about booking updates, cancellations, and ride status changes
+- Introduce WebSocket-based real-time communication to push live ride updates (e.g., driver ETA, status transitions) directly to connected frontend clients for an Uber-like experience
